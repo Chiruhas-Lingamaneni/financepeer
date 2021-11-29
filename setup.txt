@@ -1,0 +1,17 @@
+Requirements:
+1. Django 2.2
+2. python 3.6 and above
+3. postgresql
+
+Setup
+1. Open postgresql via psql and create a new database with command
+   'CREATE DATABASE assesment;'
+2. Go to financepeer/financepeer/ and open file settings.py
+   change database cradentials at line 78, change the cradentials based on your postgresql server 
+3. In terminal/command prompt navigate to project folder financepeer/ and execute the fallowing commands
+   4.a 'pip install psycopg2'
+   4.b 'python manage.py migrate'
+   4.c 'python manage.py makemigrations'
+   4.d 'python manage.py migrate'
+   4.e 'python manage.py runserver
+   Now the server must be up and running

@@ -1,0 +1,41 @@
+.homeback{
+    background-color: grey;
+    
+}
+.navcolor{
+background-color: #563d7c !important;
+color:  whitesmoke;
+    
+}
+.containerback{
+    border: black 2px solid;
+}
+.quiznext{
+    background-color: lightblue;
+}
+.solutionbox{
+     width: 60%;
+     height: 10%;
+     margin: 10px;
+     padding: 10px;
+     border: 1px black solid;
+}
+.boxpadding{
+    background-color:  white;
+    margin-bottom: 14px;
+    border-radius: 8px;
+}
+.sepline{
+    border-bottom: 1px gray solid !important;
+    padding-left: 7px;
+    padding-top: 4px;
+}
+.databody{
+
+    padding: 3px;
+    margin: 5px;
+    
+}
+.spana{
+    color: #563d7c;
+}

@@ -1,0 +1,24 @@
+{% extends "fileupload/base.html" %}
+
+{% block body%}
+
+    <h4 class="spana">Welcome {{username}}</h4>
+    <br>
+    <br>
+    {% if valid_file == 1 %}
+        <p class="text-success">File uploaded</p>
+    {% elif valid_file == 2%}
+        <p class="text-danger">Invalid file format, Expecting a .json file format</p>
+    {% elif valid_file == 3%}
+        <p class="text-danger">Invalid file content, expecting diffrent file content</p>
+    {% endif %}
+    
+    <div class="border border-dark boxpadding p-3">
+        <form method='post' enctype='multipart/form-data'>
+            {% csrf_token %}
+            <input class="bg-secondary border border-dark" type="file" name="documentone">
+            <button class="btn btn-primary border border-dark" type="submit">Upload file</button>
+        </form>
+    </div>
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "fileupload/base.html" %}
+
+{% block body %}
+
+    {% for x in data%}
+    <div class="border border-dark boxpadding">
+        <div class="sepline">
+            <p>  <b>{{x.input_id}})</b> <span class="spana"><b>User id:</b></span>{{x.user_id}}</p>
+        </div>
+        <div class="sepline">
+            <p> <span class="spana"><b>Title:</b></span> {{x.title}}</p>
+        </div>
+
+        <div class='border border-danger rounded databody'>
+            <p>{{x.body}}</p>
+        </div>
+        
+    </div>
+    {% endfor %}
+
+{% endblock %}
